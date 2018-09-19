@@ -21,8 +21,6 @@ module SessionManager
 
   private
     def authenticate_user!
-      byebug
-      p request.cookies
       redirect_to new_session_path and return unless session[:user_id].present?
     end
 end
